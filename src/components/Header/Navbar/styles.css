@@ -1,0 +1,45 @@
+.nav-mobile {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+
+    width: 100%;
+
+    background: var(--bg-neutral);
+    box-shadow: 0 -1px 4px #00000012;
+}
+
+.nav-mobile .nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    list-style: none;
+}
+
+.nav-mobile .nav-buttons li {
+    padding: 10px 0;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+
+    color: var(--color-primary-400);
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-mobile .nav-buttons .active {
+    color: var(--color-secondary)
+}
+
+@media only screen and (min-width: 700px) {
+    .header .nav-mobile {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}

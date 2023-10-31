@@ -1,0 +1,33 @@
+@media only screen and (min-width: 700px) {
+    .footer {
+        display: block;
+        padding: 16px 32px;
+        width: 100%;
+        height: fit-content;
+
+        background: var(--color-secondary);
+    }
+
+    .footer-wrapper {
+        margin: 0 auto;
+        padding: 2px 0;
+        max-width: 936px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        color: #FFF;
+    }
+
+    .footer-logo {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 33px;
+        line-height: 44px;
+        font-weight: 400;
+    }
+
+    .footer-rights {
+        font-size: 12px;
+        text-align: right;
+    }
+}

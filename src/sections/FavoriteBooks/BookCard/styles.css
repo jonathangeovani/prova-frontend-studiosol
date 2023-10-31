@@ -1,0 +1,31 @@
+.fav-book {
+    width: 136px;
+    cursor: pointer;
+}
+
+.fav-books-section .book-cover {
+    margin: 0 0 10px;
+    width: 136px;
+    height: 198px;
+}
+
+.fav-books-section .book-title {
+    width: 100%;
+    display: -webkit-box;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.fav-books-section .book-author {
+    margin: 2px 0;
+    width: 100%;
+    text-wrap: nowrap;
+
+    font-size: 14px;
+    text-overflow: ellipsis;
+
+    overflow-x: hidden;
+}

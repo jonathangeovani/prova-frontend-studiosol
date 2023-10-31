@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Bebas+Neue&display=swap');
+
+:root {
+  --color-primary-400: #757575;
+  --color-primary-700: #555555;
+  --color-lightGray: #E0E0E0;
+  --color-secondary: #A076F2;
+  --bg-neutral: #FFFFFF;
+  --bg-primary: #F7F7F7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+
+  color: var(--color-primary-400);
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-primary-700);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  
+  color: inherit;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+.hide-mobile {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@media only screen and (min-width: 700px) {
+  .hide-mobile {
+    display: block;
+    width: auto;
+    height: auto;
+  }
+}

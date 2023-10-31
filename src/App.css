@@ -1,0 +1,51 @@
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.btn-ver {
+  color: var(--color-secondary);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hide-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.book-cover {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 700px) {
+  h2 { font-size: 28px; }
+
+  .fav-top {
+      padding: 32px 0 0;
+  }
+
+  .bg-white-wrapper {
+      display: grid;
+      grid-template-columns: auto minmax(700px, 1000px) auto;
+  }
+
+  .bg-white-wrapper .center-content {
+      padding: 0 32px 32px;
+      background: var(--bg-neutral);
+      border-radius: 32px 0 0 0;
+      box-shadow: -2px -2px 2px #0000000a;
+  }
+
+  .bg-white-wrapper .right-container {
+      background: var(--bg-neutral);
+      box-shadow: 0 -2px 2px #0000000a;
+      z-index: -1;
+  }
+
+}

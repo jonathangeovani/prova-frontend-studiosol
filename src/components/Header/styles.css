@@ -1,0 +1,19 @@
+.header {
+    background: var(--bg-neutral);
+
+}
+
+@media only screen and (min-width: 700px) {
+    .header {
+        display: grid;
+        grid-template-columns: auto minmax(700px, 1000px) auto;
+
+        background: none;
+    }
+
+    .header .left-container {
+        background: var(--bg-neutral);
+        box-shadow: 2px 2px 2px #0000000a;
+        z-index: -1
+    }
+}

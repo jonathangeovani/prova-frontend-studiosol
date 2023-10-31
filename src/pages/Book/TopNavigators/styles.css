@@ -1,0 +1,23 @@
+.top-navigators {
+    padding: 20px;
+    height: 45vh;
+    display: flex;
+    justify-content: space-between;
+
+    background: linear-gradient(180deg, #000000a8 0%, transparent 60%);
+}
+
+.top-navigators img {
+    width: 24px;
+    height: 24px;
+
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 700px) {    
+    .top-navigators {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+}

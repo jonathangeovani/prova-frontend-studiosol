@@ -1,0 +1,45 @@
+.library-section {
+    width: 100%;
+    margin: 0;
+    background: var(--bg-neutral);
+}
+
+.lib-title {
+    padding: 30px 20px 0;
+}
+
+.library-section .category-carousel {
+    padding: 21px 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+
+    overflow: auto;
+}
+
+.lib-books {
+    padding: 0 20px 88px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 700px) {
+    .lib-title {
+        padding: 40px 0 0;
+    }
+
+    .library-section .category-carousel {
+        padding: 24px 0;
+    }
+
+    .lib-books {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+        gap: 24px;
+    }
+}

@@ -1,0 +1,21 @@
+.book-header .book-author {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 700px) {
+    .book-header {
+        margin: 0;
+        padding-right: 32px;
+    }
+    
+    .book-header .book-title {
+        font-size: clamp(1.75rem, 0.875rem + 2vw, 2.125rem);
+    }
+    
+    .book-header .book-author {
+        margin: 0;
+        padding: 12px 0 0;
+        font-size: 24px;
+    }
+}

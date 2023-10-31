@@ -1,0 +1,27 @@
+.fav-books-carousel {
+    padding: 21px 20px 32px;
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 20px;
+
+    overflow-x: auto;
+}
+
+@media only screen and (min-width: 700px) {
+    .fav-books-section {
+        margin: 0 auto;
+        padding: 0 32px 32px;
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    .fav-top {
+        padding: 25px 0 0;
+    }
+
+    .fav-books-carousel {
+        padding: 24px 0 0;
+        gap: 24px;
+    }
+}

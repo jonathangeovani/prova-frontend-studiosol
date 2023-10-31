@@ -1,0 +1,28 @@
+.fav-authors-section {
+    background: var(--bg-neutral);
+    border-radius: 32px 0 0 0;
+}
+
+.fav-authors-carousel {
+    padding: 21px 21px 0;
+    display: flex;
+    gap: 21px;
+
+    overflow-x: auto;
+}
+
+@media only screen and (min-width: 700px) {
+    .fav-authors-section {
+        background: none;
+        border-radius: 0;
+    }
+    
+    .fav-authors-carousel {
+        padding: 24px 0 0;
+    }
+
+    .fav-authors-section .author-picture {
+        width: 68px;
+        height: 68px;
+    }
+}

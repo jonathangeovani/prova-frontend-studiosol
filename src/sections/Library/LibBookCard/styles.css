@@ -1,0 +1,44 @@
+.lib-book-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.lib-book-card .book-cover {
+    width: 48px;
+    height: 70px;
+}
+
+.lib-book-details {
+    width: 100%;
+}
+
+.lib-book-card .book-title {
+    width: 100%;
+    display: -webkit-box;
+    
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;   
+}
+
+.lib-book-card .book-author {
+    margin-top: 6px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media only screen and (min-width: 700px) {
+    .lib-book-card {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .lib-book-card .book-cover {
+        width: 68px;
+        height: 100px;
+    }
+}
