@@ -6,10 +6,10 @@ export const textParser = (text: string | undefined) => {
     parsedText[1] = isMatch[0];
     parsedText[2] = text.split(/About.*:/)[1].trim();
 
-    return { isAbout: true, content: parsedText };
+    return { showAbout: true, content: parsedText };
   }
 
   parsedText[0] = text?.trim();
 
-  return { isAbout: false, content: [parsedText] };
+  return { showAbout: false, content: [parsedText] };
 };

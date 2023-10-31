@@ -9,7 +9,7 @@ import { textParser } from "../../utils/textParser";
 const BookDetails = () => {
   const { bookId } = useParams();
   const { data } = useBook(bookId!);
-  var { isAbout, content } = textParser(data?.description);
+  var { showAbout, content } = textParser(data?.description);
 
   return (
     <div className="book-details">
@@ -39,7 +39,7 @@ const BookDetails = () => {
         </div>
         <div className="book-text">
           <p>{content[0]}</p>
-          {isAbout && (
+          {showAbout && (
             <div className="hide-mobile">
               <h3>{content[1]}</h3>
               <p>{content[2]}</p>
