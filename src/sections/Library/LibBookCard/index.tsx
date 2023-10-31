@@ -13,7 +13,12 @@ const LibBookCard = ({ cover, title, author, id }: LibBookCardProps) => {
 
   return (
     <div className="lib-book-card" onClick={() => navigate(`book/${id}`)}>
-      <img src={cover} className="book-cover" loading="lazy" />
+      <img
+        src={cover}
+        alt={`Capa do livro ${title}`}
+        className="book-cover"
+        loading="lazy"
+      />
       <div className="lib-book-details">
         <h3 className="book-title">{title}</h3>
         <p className="book-author">{author}</p>
