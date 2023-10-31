@@ -8,7 +8,7 @@ const FavoriteBooks = () => {
 
   return (
     <section className="fav-books-section">
-      <SectionTitle title="Livros Favoritos" btnText="ver todos" />
+      <SectionTitle title="Livros favoritos" btnText="ver todos" />
       <div className="fav-books-carousel hide-scrollbar">
         {isLoading && <p>Carregando livros favoritos...</p>}
 
