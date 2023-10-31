@@ -12,12 +12,12 @@ const AuthorCard = ({ name, numBooks, picture }: AuthorCardProps) => {
       <img
         src={picture}
         className="author-picture"
-        alt="Author picture"
+        alt={`Foto de ${name}`}
         loading="lazy"
       />
       <div className="author-details">
         <h3 className="author-title">{name}</h3>
-        <p className="author-books-count">{numBooks} Livros</p>
+        <p className="author-books-count">{numBooks} livros</p>
       </div>
     </div>
   );
