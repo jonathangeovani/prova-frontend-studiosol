@@ -8,7 +8,7 @@ import { textParser } from "../../utils/textParser";
 
 const BookDetails = () => {
   const { bookId } = useParams();
-  const { data } = useBook(bookId!);
+  const { isLoading, isError, data } = useBook(bookId!);
   var { showAbout, content } = textParser(data?.description);
 
   return (
@@ -29,8 +29,12 @@ const BookDetails = () => {
         <div className="book-image-container">
           <div className="container-wrapper">
             <img
-              src={data?.cover}
-              alt="Book title"
+              src={
+                isLoading || isError
+                  ? "https://placehold.co/296x433"
+                  : data?.cover
+              }
+              alt={`Capa do livro ${data?.name}`}
               className="book-banner"
               loading="lazy"
             />
@@ -38,7 +42,13 @@ const BookDetails = () => {
           </div>
         </div>
         <div className="book-text">
-          <p>{content[0]}</p>
+          {isLoading && <p>Carregando descrição do livro...</p>}
+
+          {data && <p>{content[0]}</p>}
+
+          {isError && (
+            <p>Não foi possível carregar informações sobre o livro!</p>
+          )}
           {showAbout && (
             <div className="hide-mobile">
               <h3>{content[1]}</h3>
